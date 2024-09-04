@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
 import { MaterialComponent } from './material/material.component';
+import { FirstPageComponent } from './first-page.component';
 
 
 
@@ -11,7 +12,8 @@ import { MaterialComponent } from './material/material.component';
   declarations: [
     BodyComponent,
     FooterComponent,
-    MaterialComponent
+    MaterialComponent,
+    FirstPageComponent
   ],
   imports: [
     CommonModule
@@ -19,7 +21,8 @@ import { MaterialComponent } from './material/material.component';
   exports: [
     BodyComponent,
     FooterComponent,
-    MaterialComponent
+    MaterialComponent,
+    FirstPageComponent
   ]
 })
 export class FirstPageModule { }

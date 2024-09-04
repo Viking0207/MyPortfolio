@@ -6,17 +6,18 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import { FirstPageModule } from './first-page/first-page.module';
+import { FirstPageComponent } from './first-page/first-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FirstPageModule
+    FirstPageModule,
   ],
   providers: [
     provideClientHydration()
