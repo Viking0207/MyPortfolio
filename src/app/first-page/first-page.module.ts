@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from './footer/footer.component';
 import { BodyComponent } from './body/body.component';
@@ -11,10 +12,11 @@ import { FirstPageComponent } from './first-page.component';
   declarations: [
     BodyComponent,
     FooterComponent,
-    FirstPageComponent
+    [FirstPageComponent]
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     BodyComponent,

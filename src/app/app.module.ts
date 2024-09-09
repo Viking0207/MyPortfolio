@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 
 import { FirstPageModule } from './first-page/first-page.module';
-import { FirstPageComponent } from './first-page/first-page.component';
+import { AboutModule } from './About/about.module';
+
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { FirstPageComponent } from './first-page/first-page.component';
     BrowserModule,
     AppRoutingModule,
     FirstPageModule,
+    AboutModule
   ],
   providers: [
     provideClientHydration()
