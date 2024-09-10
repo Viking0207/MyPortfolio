@@ -1,9 +1,9 @@
 <div class="font-imul hero bg-base-200 min-h-screen">
-  <div> 
+  <div class="group">
     <img
       src="/assets/img/shapebg.png"
-        class="hidden lg:block lg:max-w-sm lg:translate-x-80 lg:-translate-y-11"
-      />
+      class="hidden lg:block lg:max-w-sm lg:translate-x-80 lg:-translate-y-11"
+    />
   </div>
   <div class="hidden md:block">
     <img
@@ -12,23 +12,33 @@
     />
   </div>
   <div class="hero-content flex-col lg:flex-row-reverse">
-    <img
-      src="/assets/img/img1.png"
-      class="max-w-sm -translate-y-5 lg:hidden"
-    />
-    <div class="ml-14">
+    <div class="relative max-w-sm group">
+      <img
+        src="/assets/img/shapebg.png"
+        class="absolute inset-0 w-full h-full object-cover z-0 lg:hidden opacity-0 transition-all duration-500 transform scale-50 group-hover:opacity-100 group-hover:rotate-360 group-hover:scale-90"
+      />
+      <img
+        src="/assets/img/img1.png"
+        class="relative -translate-y-0 z-10 lg:hidden"
+      />
+    </div>
+    <div class="lg:ml-14 lg:text-left text-center">
       <p class="text-xl font-bold">Hi there!</p>
       <h1 class="text-6xl font-bold">
-        I am <span class="text-teal-700">Ficky</span><br>Febryan
+        I am <span class="text-teal-700">Ficky</span><br />Febryan
       </h1>
-      <p class="text-4xl mt-3 py-1 tracking-wider">I am a <span class="text-teal-700">web developer</span></p>
-      <p class="text-lg w-1/2 mb-3">
-        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-        excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-        id nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <p class="text-4xl mt-3 py-1 tracking-wider">
+        I am a <span class="text-teal-700">web developer</span>
+      </p>
+      <p class="lg:text-left lg:w-2/2 lg:mb-3 mb-5 text-center text-lg">
+        Saya seorang web developer yang berfokus pada framework Angular dan juga
+        seorang fullstak developer. Saya berpengalaman dalam bidang frontend dan
+        backend, serta pada pengembangan aplikasi web yang responsif dan
+        scalable. Saya selalu berusaha mempelajari teknologi lama dan juga
+        teknologi yang paling terbaru.
       </p>
       <button
-        class="btn rounded bg-teal-700 hover:bg-teal-900 text-slate-100 text-sm w-36 h-12"
+        class="btn rounded bg-teal-700 hover:bg-teal-900 text-slate-100 text-sm w-36 h-12 mb-20"
       >
         Hire Me
       </button>

@@ -10,8 +10,8 @@ import { Body2Component } from './About/body2/body2.component';
 import { Footer2Component } from './About/footer2/footer2.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/firstPg', pathMatch: 'full'},
-  {path: 'firstPg', component: FirstPageComponent, children: [
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'home', component: FirstPageComponent, children: [
     {path: 'bodyFP', component: BodyComponent},
     {path: 'footFP', component: FooterComponent}
   ]},
