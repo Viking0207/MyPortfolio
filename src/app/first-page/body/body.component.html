@@ -1,27 +1,28 @@
 <div class="font-imul hero bg-base-200 min-h-screen">
-  <div class="group">
-    <img
-      src="/assets/img/shapebg.png"
-      class="hidden lg:block lg:max-w-sm lg:translate-x-80 lg:-translate-y-11"
-    />
+
+  <div class="hidden lg:block lg:relative lg:max-w-sm group">    
+      <img
+        src="/assets/img/shapebg.png"
+        class="lg:absolute lg:translate-x-80 lg:-translate-y-12 lg:inset-0 lg:w-full lg:h-full lg:object-cover lg:z-0 lg:opacity-25 lg:transition-all lg:duration-700 lg:transform lg:scale-80 lg:group-hover:opacity-90 lg:group-hover:scale-95"
+      />
+      <img
+        src="/assets/img/img1.png"
+        class="lg:relative lg:translate-x-80 lg:-translate-y-12 z-10"
+      />
   </div>
-  <div class="hidden md:block">
-    <img
-      src="/assets/img/img1.png"
-      class="hidden lg:block lg:max-w-sm lg:translate-x-80 lg:-translate-y-12"
-    />
-  </div>
+
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="relative max-w-sm group">
       <img
         src="/assets/img/shapebg.png"
-        class="absolute inset-0 w-full h-full object-cover z-0 lg:hidden opacity-0 transition-all duration-500 transform scale-50 group-hover:opacity-100 group-hover:rotate-360 group-hover:scale-90"
+        class="absolute inset-0 w-full h-full object-cover z-0 lg:hidden opacity-25 transition-all duration-700 transform scale-80 group-hover:opacity-90 group-hover:scale-95"
       />
       <img
         src="/assets/img/img1.png"
         class="relative -translate-y-0 z-10 lg:hidden"
       />
     </div>
+
     <div class="lg:ml-14 lg:text-left text-center">
       <p class="text-xl font-bold">Hi there!</p>
       <h1 class="text-6xl font-bold">
@@ -43,5 +44,6 @@
         Hire Me
       </button>
     </div>
+
   </div>
 </div>

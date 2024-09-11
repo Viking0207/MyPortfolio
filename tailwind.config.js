@@ -12,13 +12,13 @@ module.exports = {
       width: {
         '2/2': '52%',
       },
-      rotate: {
-        '360': '360deg',
+      scale: {
+        '80': '.8',
+        '95': '.95'
       }
     },
   },
   plugins: [
     require('daisyui'),
   ],
-}
-
+};
