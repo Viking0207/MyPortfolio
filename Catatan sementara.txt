@@ -1,0 +1,80 @@
+# Introduction
+Halo, nama lengkap saya Ficky febryan saputra. Saat ini, saya memiliki profesi sebagai seorang programmer dan saya bekerja sebagai seorang freelancer. Dalam keseharian, saya mengembangkan [contoh aplikasi], contohnya dengan [contoh kegiatan]. Minat utama saya adalah di bidang development software terutama dalam hal mempelajari teknologi-teknologi terbaru seperti AI, cloud computing, operating system, serta bagaimana mereka bisa diterapkan untuk menciptakan solusi yang inovatif dan berdampak bagi masa depan.
+
+# Education
+---------------------------------------------------
+`Contoh Sertifikat Pendidikan Formal`
+
+UNIVERSITAS TEKNOLOGI INDONESIA
+Sertifikat Kelulusan
+
+Sertifikat ini diberikan kepada:
+
+[Nama Lengkap]
+
+Yang telah berhasil menyelesaikan pendidikan pada program studi:
+
+Teknik Informatika
+
+Dan telah memenuhi syarat kelulusan dengan gelar:
+
+Sarjana Komputer (S.Kom)
+
+Pada tanggal: [Tanggal Kelulusan]
+
+Rektor
+[Nama Rektor]
+Universitas Teknologi Indonesia
+
+Dekan Fakultas Teknik
+[Nama Dekan]
+Fakultas Teknik Informatika
+---------------------------------------------------
+`Contoh Sertifikasi Profesional`
+
+SERTIFIKAT PROFESIONAL
+[Nama Lembaga Sertifikasi]
+
+Dengan ini menyatakan bahwa:
+
+[Nama Lengkap]
+
+Telah berhasil menyelesaikan dan memenuhi persyaratan untuk mendapatkan sertifikasi:
+
+Certified Web Developer
+
+Dalam bidang:
+
+Pengembangan Aplikasi Web
+
+Pada tanggal: [Tanggal Sertifikasi]
+
+Nomor Sertifikat: [Nomor Sertifikat]
+
+Direktur Sertifikasi
+[Nama Direktur]
+[Nama Lembaga Sertifikasi]
+---------------------------------------------------
+
+# Interests & Hobbies
+Sejak kecil, saya memiliki ketertarikan mendalam pada musik. Saya suka memainkan berbagai alat music seperti gitar, ukulele, pianica, dan seruling di waktu luang, menciptakan melodi baru, dan bereksperimen dengan berbagai genre musik yang ada. Musik bagi saya adalah cara untuk mengekspresikan perasaan dan melepas penat setelah menjalani hari yang sibuk. Saya juga pernah mengikuti komunitas musik lokal di sekolah untuk belajar berkolaborasi dengan musisi lain dan memperluas wawasan musikal saya.
+
+Selain itu, saya juga gemar bermain video game, khususnya game dengan elemen strategi dan petualangan. Bermain game memberikan saya tantangan untuk berpikir kritis, membuat keputusan cepat, dan merancang strategi untuk mencapai tujuan. Hobi ini tidak hanya sekadar hiburan, tetapi juga mengasah kemampuan problem solving dan teamwork, terutama ketika bermain secara online bersama teman-teman. Kombinasi antara hobi bermain musik dan bermain game mencerminkan sisi kreatif dan analitis saya, serta semangat untuk terus belajar dan beradaptasi dalam situasi yang berbeda-beda.
+
+# Personal Vision & Mission
+`Visi Ku`
+Menjadi seorang programmer yang inovatif dan terampil dalam menggabungkan kreativitas dengan keahlian teknis, serta memberikan kontribusi positif melalui pengembangan perangkat lunak, pengembangan game, dan pengembangan desain web. Saya berkomitmen untuk menciptakan solusi yang efektif dan berdampak, sambil terus belajar dan beradaptasi dalam berbagai aspek kehidupan.
+
+`Misi Ku`
+1. Mengembangkan keterampilan pemrograman: Terus belajar dan berlatih dalam berbagai bahasa pemrograman seperti java, c++, c# dan python serta mempelajari teknologi terbaru lainnya untuk menciptakan perangkat lunak yang efisien dan inovatif, serta menyelesaikan tantangan teknis dengan solusi kreatif.
+2. Menjaga keseimbangan antara pekerjaan dan hobi: Mengintegrasikan kecintaan terhadap musik dan permainan strategi dengan pekerjaan sebagai programmer untuk menciptakan keseimbangan yang harmonis antara kreativitas, analisis, dan pengembangan diri.
+3.Berbagi kreativitas dan pengalaman: Berkolaborasi dengan musisi, gamer, dan profesional di bidang teknologi untuk berbagi pengetahuan dan pengalaman, serta terlibat dalam komunitas yang mendukung pengetahuan, pengembangan kreatif dan analitis.
+4.Mengembangkan kemampuan strategi: Bermain video game dengan elemen strategi dan petualangan untuk meningkatkan keterampilan berpikir kritis, pengambilan keputusan, dan teamwork, serta menerapkan wawasan yang diperoleh dalam proyek pengembangan perangkat lunak di suatu perusahaan.
+5.Terus belajar dan beradaptasi: Selalu mencari cara baru untuk belajar dan beradaptasi dengan perubahan dalam dunia teknologi, musik, dan permainan, agar tetap relevan dan memberikan kontribusi positif dalam setiap aspek kehidupan.
+
+# Inspirational Quotes
+"Terus belajar untuk memperlajari hal-hal baru dan beradaptasi dengan hal-hal baru adalah cara saya untuk maju ke masa yang akan mendatang."
+
+
+
+

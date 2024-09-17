@@ -24,8 +24,19 @@
       >
         <li><a routerLink="home">Home</a></li>
         <li><a routerLink="about">About me</a></li>
+        <li>
+          <details>
+            <summary>Portfolio</summary>
+            <ul class="p-2">
+              <li><a>Project</a></li>
+              <li><a>Client</a></li>
+              <li><a>Reviews</a></li>
+              <li><a>Skills</a></li>
+              <li><a>Experience</a></li>
+            </ul>
+          </details>
+        </li>
         <li><a>Blog</a></li>
-        <li><a>Reviews</a></li>
         <li>
           <details>
             <summary>Contact</summary>
@@ -46,12 +57,23 @@
     <ul class="menu menu-horizontal px-1">
       <li><a routerLink="home">Home</a></li>
       <li><a routerLink="about">About me</a></li>
-      <li><a>Portfolio</a></li>
-      <li><a>Reviews</a></li>
+      <li>
+        <details>
+          <summary>Portfolio</summary>
+          <ul class="p-2 z-10 bg-neutral text-neutral-content">
+            <li><a>Project</a></li>
+            <li><a>Client</a></li>
+            <li><a>Reviews</a></li>
+            <li><a>Skills</a></li>
+            <li><a>Experience</a></li>
+          </ul>
+        </details>
+      </li>
+      <li><a>Blog</a></li>
       <li>
         <details>
           <summary>Contact</summary>
-          <ul class="p-2 bg-neutral text-neutral-content">
+          <ul class="p-2 z-10 bg-neutral text-neutral-content">
             <li><a>Whatsapp</a></li>
             <li><a>Instagram</a></li>
             <li><a>Tweet</a></li>
@@ -65,7 +87,12 @@
   <div class="navbar-end space-x-9 mr-10">
     <label class="swap swap-rotate">
       <!-- this hidden checkbox controls the state -->
-      <input type="checkbox" class="theme-controller" value="synthwave" checked />
+      <input
+        type="checkbox"
+        class="theme-controller"
+        value="synthwave"
+        checked
+      />
       <!-- sun icon -->
       <svg
         class="swap-off h-7 w-auto fill-current"
