@@ -27,11 +27,10 @@
           <details [attr.open]="openSection === 'about2' ? true : null" (click)="toggleSection('about2')">
             <summary>About Me</summary>
             <ul class="p-2">
-              <li><a routerLink="about">About me</a></li>
-              <li><a>kiwkwiwkiw</a></li>
-              <li><a>kiwkwiwkiw</a></li>
-              <li><a>kiwkwiwkiw</a></li>
-              <li><a>kiwkwiwkiw</a></li>
+              <li><a routerLink="about">Introduction</a></li>
+              <li><a>Interests & Hobbies</a></li>
+              <li><a>Vision & Mission</a></li>
+              <li><a>Quotes</a></li>
             </ul>
           </details>
         </li>
@@ -71,11 +70,10 @@
         <details [attr.open]="openSection === 'about' ? true : null" (click)="toggleSection('about')">
           <summary>About Me</summary>
           <ul class="p-2 z-10 bg-neutral text-neutral-content">
-            <li><a routerLink="about">About me</a></li>
-            <li><a>kiwkwiwkiw</a></li>
-            <li><a>kiwkwiwkiw</a></li>
-            <li><a>kiwkwiwkiw</a></li>
-            <li><a>kiwkwiwkiw</a></li>
+            <li><a routerLink="about">Introduction</a></li>
+            <li><a>Interests & Hobbies</a></li>
+            <li><a>Vision & Mission</a></li>
+            <li><a>Quotes</a></li>
           </ul>
         </details>
       </li>
@@ -110,10 +108,11 @@
     <label class="swap swap-rotate">
       <!-- this hidden checkbox controls the state -->
       <input
+        (click)="toggleDarkMode()"
         type="checkbox"
         class="theme-controller"
         value="synthwave"
-        checked
+        [checked]="isDarkMode"
       />
       <!-- sun icon -->
       <svg
