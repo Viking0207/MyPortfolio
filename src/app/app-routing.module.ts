@@ -2,23 +2,22 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { FirstPageComponent } from './first-page/first-page.component';
-import { BodyComponent } from './first-page/body/body.component';
-import { FooterComponent } from './first-page/footer/footer.component';
 
 import { AboutComponent } from './About/about.component';
-import { Body2Component } from './About/body2/body2.component';
-import { Footer2Component } from './About/footer2/footer2.component';
+import { HobbyComponent } from './About/about-content/hobby/hobby.component';
+import { VisionMisionComponent } from './About/about-content/vision-mision/vision-mision.component';
+import { QuotesComponent } from './About/about-content/quotes/quotes.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'home', component: FirstPageComponent, children: [
-    {path: 'bodyFP', component: BodyComponent},
-    {path: 'footFP', component: FooterComponent}
-  ]},
+  {path: 'home', component: FirstPageComponent},
+
   {path: 'about', component: AboutComponent, children: [
-    {path: 'body2', component: Body2Component},
-    {path: 'foot2', component: Footer2Component}
+    {path: 'hobby', component: HobbyComponent},
+    {path: 'vision', component: VisionMisionComponent},
+    {path: 'quotes', component: QuotesComponent},
   ]},
+  
 ];
 
 @NgModule({

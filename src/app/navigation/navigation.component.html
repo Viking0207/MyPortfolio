@@ -28,9 +28,9 @@
             <summary>About Me</summary>
             <ul class="p-2">
               <li><a routerLink="about">Introduction</a></li>
-              <li><a>Interests & Hobbies</a></li>
-              <li><a>Vision & Mission</a></li>
-              <li><a>Quotes</a></li>
+              <li><a routerLink="hobby">Interests & Hobbies</a></li>
+              <li><a routerLink="vision">Vision & Mission</a></li>
+              <li><a routerLink="quotes">Quotes</a></li>
             </ul>
           </details>
         </li>
@@ -67,15 +67,16 @@
     <ul class="menu menu-horizontal px-1">
       <li><a routerLink="home">Home</a></li>
       <li>
-        <details [attr.open]="openSection === 'about' ? true : null" (click)="toggleSection('about')">
+        <!-- <details [attr.open]="openSection === 'about' ? true : null" (click)="toggleSection('about')">
           <summary>About Me</summary>
           <ul class="p-2 z-10 bg-neutral text-neutral-content">
             <li><a routerLink="about">Introduction</a></li>
-            <li><a>Interests & Hobbies</a></li>
-            <li><a>Vision & Mission</a></li>
-            <li><a>Quotes</a></li>
+            <li><a routerLink="/about/hobby">Interests & Hobbies</a></li>
+            <li><a routerLink="/about/vision">Vision & Mission</a></li>
+            <li><a routerLink="/about/quotes">Quotes</a></li>
           </ul>
-        </details>
+        </details> -->
+        <a routerLink="about">About</a>
       </li>
       <li>
         <details [attr.open]="openSection === 'portfolio' ? true : null" (click)="toggleSection('portfolio')">

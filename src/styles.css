@@ -8,3 +8,6 @@
 
 /* Lexend font */
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
