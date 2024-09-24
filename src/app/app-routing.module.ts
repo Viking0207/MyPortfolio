@@ -13,9 +13,9 @@ const routes: Routes = [
   {path: 'home', component: FirstPageComponent},
 
   {path: 'about', component: AboutComponent, children: [
-    {path: 'hobby', component: HobbyComponent},
-    {path: 'vision', component: VisionMisionComponent},
-    {path: 'quotes', component: QuotesComponent},
+    {path: 'hobby', component: HobbyComponent, data: { animation: 'HobbyPage' }},
+    {path: 'vision', component: VisionMisionComponent, data: { animation: 'VisionPage' }},
+    {path: 'quotes', component: QuotesComponent, data: { animation: 'QuotesPage' }},
   ]},
   
 ];
