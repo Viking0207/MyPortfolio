@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-body2',
@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class Body2Component {
 
+  @Input() selectedIndex: number = 0;
+  @Output() tabChanged: EventEmitter<number> = new EventEmitter<number>();
+
+  onTabChange(event: number) {
+    this.tabChanged.emit(event);
+  }
 }

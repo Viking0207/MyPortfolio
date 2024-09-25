@@ -1,14 +1,5 @@
-<mat-tab-group (selectedTabChange)="onTabChange($event)" fitInkBarToContent>
-	<mat-tab label="First"></mat-tab>
-	<mat-tab label="Second"></mat-tab>
-	<mat-tab label="Third"></mat-tab>
-	<mat-tab label disabled="Fourth"></mat-tab>
-  </mat-tab-group>
-<div [@routeAnimations]>
-	<router-outlet></router-outlet>
+<app-body2 [selectedIndex]="selectedIndex" (tabChanged)="onTabChange($event)"></app-body2>
+<div [@routeAnimations]="prepareRoute(outlet)">
+	<router-outlet #outlet="outlet"></router-outlet>
 </div>
-
-
-
-
-
+<app-footer2></app-footer2>

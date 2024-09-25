@@ -1,46 +1,54 @@
-import { Component } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { trigger, style, animate, transition } from '@angular/animations';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { slideInAnimation } from './route-animations';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styles: [],
   animations: [
-    trigger('routeAnimations', [
-      transition('* => *', [
-        style({ transform: 'translateX(100%)', opacity: 0 }),
-        animate('1s ease-out', style({ transform: 'translateX(0)', opacity: 1 }))
-      ])
-    ])
+    slideInAnimation
   ]
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
+
+  selectedIndex: number = 0;
+
   constructor(private router: Router, private route: ActivatedRoute) {}
 
+  ngOnInit(): void {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {  
+      const url = this.router.url;
+      if (url.includes('/about/intro')) {
+        this.selectedIndex = 0;
+      } else if (url.includes('/about/hobby')) {
+        this.selectedIndex = 1;
+      } else if (url.includes('/about/vision')) {
+        this.selectedIndex = 2;
+      } else if (url.includes('/about/quotes')) {
+        this.selectedIndex = 3;
+      }
+      
+    });
+  }
 
-  onTabChange(event: any) {
-    const tabIndex = event.index;
-    let tabRoute = '';
-
-    console.log(`Tab index: ${tabIndex}, Navigating to: ${tabRoute}`);
-
-    switch (tabIndex) {
-      case 0:
-        tabRoute = 'hobby';
-        break;
-      case 1:
-        tabRoute = 'vision';
-        break;
-      case 2:
-        tabRoute = 'quotes';
-        break;
-      case 3:
-        tabRoute = 'hobby';
-        break;
+  onTabChange(index: number): void {
+    if (index === 0) {
+      this.router.navigate(['/about/intro']);
+    } else if (index === 1) {
+      this.router.navigate(['/about/hobby']);
+    } else if (index === 2) {
+      this.router.navigate(['/about/vision']);
+    } else if (index === 3) {
+      this.router.navigate(['/about/quotes']);
     }
+    
+  }
 
-    this.router.navigate([tabRoute], { relativeTo: this.route }).then(() => {});
-
+  prepareRoute(outlet: any) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 }
