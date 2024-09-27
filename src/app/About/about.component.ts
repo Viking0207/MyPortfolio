@@ -1,5 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { slideInAnimation } from './route-animations';
 import { filter } from 'rxjs';
 
@@ -18,6 +18,20 @@ export class AboutComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit(): void {
+
+    const isNewSession = !sessionStorage.getItem('sessionStarted');
+    
+    if (isNewSession) {
+      localStorage.setItem('selectedTabIndex', '0');
+      sessionStorage.setItem('sessionStarted', 'true'); 
+      this.selectedIndex = 0;
+      this.router.navigate(['/about/intro']);
+    }
+    else {
+      const savedIndex = localStorage.getItem('selectedTabIndex');
+      this.selectedIndex = savedIndex ? +savedIndex : 0;      
+    }
+
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {  
@@ -29,8 +43,10 @@ export class AboutComponent implements OnInit {
       } else if (url.includes('/about/vision')) {
         this.selectedIndex = 2;
       } else if (url.includes('/about/quotes')) {
-        this.selectedIndex = 3;
+        this.selectedIndex = 3;  
       }
+
+      localStorage.setItem('selectedTabIndex', this.selectedIndex.toString());
       
     });
   }
@@ -46,6 +62,8 @@ export class AboutComponent implements OnInit {
       this.router.navigate(['/about/quotes']);
     }
     
+    localStorage.setItem('selectedTabIndex', index.toString());
+
   }
 
   prepareRoute(outlet: any) {

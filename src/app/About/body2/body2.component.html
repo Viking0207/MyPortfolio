@@ -1,6 +1,10 @@
-<mat-tab-group [(selectedIndex)]="selectedIndex" (selectedIndexChange)="onTabChange($event)" fitInkBarToContent>
-	<mat-tab label="Introduction" routerLink="/about/intro"></mat-tab>
-	<mat-tab label="Hobby" routerLink="/about/hobby"></mat-tab>
-	<mat-tab label="Vision" routerLink="/about/vision"></mat-tab>
-	<mat-tab label="Quotes" routerLink="/about/quotes"> </mat-tab>
-</mat-tab-group>
+  <div class="lg:px-28 pt-10 lg:text-xl bg-base-200 text-base-content dark:text-base-content">
+    <mat-tab-group [(selectedIndex)]="selectedIndex" (selectedIndexChange)="onTabChange($event)" fitInkBarToContent
+    
+    >
+      <mat-tab label="Introduction" routerLink="/about/intro" [ngClass]="{'border-b-2 border-gray-600': selectedIndex === 0, 'border-b-0': selectedIndex !== 0}"></mat-tab>
+      <mat-tab label="Interests & Hobbies" routerLink="/about/hobby"></mat-tab>
+      <mat-tab label="Vision & Mission" routerLink="/about/vision"></mat-tab>
+      <mat-tab label="Quotes" routerLink="/about/quotes"></mat-tab>
+    </mat-tab-group>
+  </div>
