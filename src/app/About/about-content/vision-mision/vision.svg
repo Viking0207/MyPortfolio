@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" id="bolt">
+  <g transform="translate(-.1 -1020.361)">
+    <path fill-rule="evenodd" d="M14.111 1022.862v2c0 .374.213.686.516.858a.5.5 0 0 0-.016.136v1.924a.5.5 0 0 0 .36.563.5.5 0 0 0 .007 0 .5.5 0 0 0 .002 0 .5.5 0 0 0 .088.016.5.5 0 0 0 .008 0 .5.5 0 0 0 .035 0 1 1 0 0 1 .924.619.987.987 0 0 1-.084.91l-.32-.244a.5.5 0 0 0-.344-.16.5.5 0 0 0-.05 0 .5.5 0 0 0-.354.162l-.502.38a.99.99 0 0 1-.27-.667.5.5 0 1 0-1 0c0 .478.187.916.483 1.27l-5.285 4.032a.5.5 0 1 0 .607.795l5.535-4.224c.5.176 1.04.145 1.508-.074l5.342 4.1a.5.5 0 1 0 .61-.796l-5.177-3.97c.385-.553.49-1.263.227-1.899a2 2 0 0 0-1.35-1.162v-1.578a.5.5 0 0 0-.015-.135.985.985 0 0 0 .515-.86v-2h-2z" color="#000" font-family="sans-serif" font-weight="400" opacity=".15" overflow="visible" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"></path>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="m9.612 1035.062 6.645-5.072"></path>
+    <path d="M9.111 1034.361c-1.099 0-2 .901-2 2v12c0 1.1.901 2 2 2h12c1.1 0 2-.9 2-2v-12c0-1.099-.9-2-2-2z" color="#000" font-family="sans-serif" font-weight="400" opacity=".15" overflow="visible" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"></path>
+    <path fill="none" stroke="#576d7e" stroke-linecap="round" stroke-linejoin="round" d="M16.112 1025.855v2"></path>
+    <path fill="none" stroke="#576d7e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="0" d="M16.112 1027.862a1.5 1.5 0 0 1 1.386.926 1.5 1.5 0 0 1-.325 1.635 1.5 1.5 0 0 1-1.635.325 1.5 1.5 0 0 1-.926-1.386" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></path>
+    <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="m22.606 1034.862-6.349-4.872"></path>
+    <path fill="none" stroke="#000" d="m4.112 1045.862 2-1m-2-6 2 1m-2.224 2.5h2m22 3.5-2-1m2-6-2 1m2.224 2.5h-2"></path>
+    <path fill="#25b39e" d="M10.111 1034.361c-1.099 0-2 .901-2 2v12c0 1.1.901 2 2 2h12c1.1 0 2-.9 2-2v-12c0-1.099-.9-2-2-2z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" style="line-height:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;block-progression:tb;isolation:auto;mix-blend-mode:normal"></path>
+    <path fill-rule="evenodd" d="m12.857 1034.362-1.745 7.2h3.49l-1.745 4.8 6.982-7.2h-3.49l1.745-4.8z" opacity=".15"></path>
+    <path fill="#f05542" fill-rule="evenodd" d="m13.857 1034.362-1.745 7.2h3.49l-1.745 4.8 6.982-7.2h-3.49l1.745-4.8z"></path>
+    <path fill="#f8b74e" fill-opacity=".976" d="M15.112 1022.862h2v1.5h-2z" color="#000" overflow="visible" style="isolation:auto;mix-blend-mode:normal"></path>
+    <rect width="2" height="2.5" x="15.112" y="1023.362" fill="#f8b74e" fill-opacity=".976" color="#000" overflow="visible" ry="1" style="isolation:auto;mix-blend-mode:normal"></rect>
+  </g>
+</svg>
