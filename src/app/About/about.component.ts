@@ -34,7 +34,7 @@ export class AboutComponent implements OnInit {
 
     this.router.events.pipe(
       filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {  
+    ).subscribe(() => {
       const url = this.router.url;
       if (url.includes('/about/intro')) {
         this.selectedIndex = 0;
