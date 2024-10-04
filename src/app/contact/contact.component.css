@@ -1,0 +1,45 @@
+.tab-container {
+  position: relative;
+  width: 270px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.tab {
+  margin: 5px 0;
+  background-color: lightgray;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.8s ease, transform 0.8s ease;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.tab.selected {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.2) rotateY(360deg);
+  z-index: 10;
+}
+
+.tab.not-selected {
+  transform: scale(0.8) rotateY(0deg);
+  opacity: 0.6;
+}
+
+.tab.top {
+  transform: translateY(-30px) scale(0.8) rotateY(0deg);
+}
+
+.tab.bottom {
+  transform: translateY(30px) scale(0.8) rotateY(0deg);
+}
+
+.tab.hidden {
+  display: none;
+}

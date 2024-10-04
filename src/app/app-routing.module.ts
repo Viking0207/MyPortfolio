@@ -9,6 +9,9 @@ import { HobbyComponent } from './About/about-content/hobby/hobby.component';
 import { VisionMisionComponent } from './About/about-content/vision-mision/vision-mision.component';
 import { QuotesComponent } from './About/about-content/quotes/quotes.component';
 
+import { ContactComponent } from './contact/contact.component';
+
+
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -20,7 +23,8 @@ const routes: Routes = [
     {path: 'vision', component: VisionMisionComponent, data: { animation: 'VisionPG' }},
     {path: 'quotes', component: QuotesComponent, data: { animation: 'QuotesPG' }},
   ]},
-  
+
+  {path:'contact', component: ContactComponent}
 ];
 
 @NgModule({

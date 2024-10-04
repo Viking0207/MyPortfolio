@@ -1,0 +1,10 @@
+<div class="tab-container">
+  <div
+    *ngFor="let tab of tabs; let i = index"
+    class="tab"
+    [ngClass]="getClasses(i)"
+    (click)="updateTabs(i)"
+  >
+    {{ tab }}
+  </div>
+</div>
