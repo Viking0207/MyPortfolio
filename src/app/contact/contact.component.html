@@ -1,10 +1,34 @@
-<div class="tab-container">
-  <div
-    *ngFor="let tab of tabs; let i = index"
-    class="tab"
-    [ngClass]="getClasses(i)"
-    (click)="updateTabs(i)"
-  >
-    {{ tab }}
+<div class="flex justify-between items-center h-screen">
+  <div class="content-container ml-8 p-9 border border-gray-300 rounded-lg" [@contentAnimation]>
+    <div *ngIf="selectedIndex === 0">
+      <h2>Contact WhatsApp</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div *ngIf="selectedIndex === 1">
+      <h2>Contact Instagram</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div *ngIf="selectedIndex === 2">
+      <h2>Contact Tweet</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div *ngIf="selectedIndex === 3">
+      <h2>Contact Email</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
   </div>
+
+  <div
+    class="tab-container relative w-96 h-80 flex flex-col justify-center overflow-hidden perspective-[62.5rem] mr-4"
+  >
+    <div
+      *ngFor="let tab of tabs; let i = index"
+      class="tab text-center bg-gray-300 my-3 cursor-pointer transition-all duration-[800ms] ease-out flex items-center justify-center transform-gpu"
+      [ngClass]="getClasses(i)"
+      (click)="updateTabs(i)"
+    >
+      {{ tab }}
+    </div>
+  </div>
+  
 </div>
