@@ -10,7 +10,6 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { FirstPageModule } from './first-page/first-page.module';
 import { AboutModule } from './About/about.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { ContactComponent } from './contact/contact.component';
 
 import { ContactModule } from './contact/contact.module';
 

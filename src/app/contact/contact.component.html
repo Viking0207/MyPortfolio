@@ -1,5 +1,5 @@
 <div class="flex justify-between items-center h-screen">
-  <div class="content-container ml-8 p-9 border border-gray-300 rounded-lg" [@contentAnimation]>
+  <!-- <div class="content-container ml-8 p-9 border border-gray-300 rounded-lg" [@contentAnimation]>
     <div *ngIf="selectedIndex === 0">
       <h2>Contact WhatsApp</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -16,6 +16,10 @@
       <h2>Contact Email</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
+  </div> -->
+  
+  <div [@routeAnimations]="prepareRoute('outlet')">
+    <router-outlet #outlet="outlet"></router-outlet>
   </div>
 
   <div
@@ -25,10 +29,11 @@
       *ngFor="let tab of tabs; let i = index"
       class="tab text-center bg-gray-300 my-3 cursor-pointer transition-all duration-[800ms] ease-out flex items-center justify-center transform-gpu"
       [ngClass]="getClasses(i)"
-      (click)="updateTabs(i)"
+      (click)="updateTabs(i) === onTabChange(i)"
     >
       {{ tab }}
     </div>
   </div>
+
   
 </div>
