@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 
 import { Renderer2, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { RouteService } from '../service/route.service';
 
 @Component({
   selector: 'app-navigation',
@@ -34,7 +35,8 @@ export class NavigationComponent implements OnInit {
 
   constructor(
     private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: any
+    @Inject(PLATFORM_ID) private platformId: any,
+    private routeService: RouteService
   ) {}
 
   ngOnInit() {
@@ -84,5 +86,9 @@ export class NavigationComponent implements OnInit {
       );
       this.renderer.addClass(document.body, 'dark');
     }
+  }
+
+  isContactPage(): boolean {
+    return this.routeService.isContactPage();
   }
 }

@@ -14,12 +14,15 @@ import { WhatsappComponent } from './contact/whatsapp/whatsapp.component';
 import { InstagramComponent } from './contact/instagram/instagram.component';
 import { ConEmailComponent } from './contact/con-email/con-email.component';
 import { TweetComponent } from './contact/tweet/tweet.component';
+import { ContactMeComponent } from './navigation/contact-me/contact-me.component';
 
 
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: FirstPageComponent},
+
+  {path: 'cont-me', component: ContactMeComponent},
 
   {path: 'about', component: AboutComponent, children: [
     {path: 'intro', component: IntroComponent, data: { animation: 'IntroPG' }},

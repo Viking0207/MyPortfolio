@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { RouteService } from './service/route.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'MyPortofolio';
+  constructor(private routeService: RouteService) {}
+
+  showNavigation(): boolean {
+    return !this.routeService.isContactPage();
+  }
+
 }

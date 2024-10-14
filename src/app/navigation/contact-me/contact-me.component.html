@@ -1,0 +1,27 @@
+<div class="container mx-auto max-w-5xl p-10 bg-slate-300 text-slate-500 rounded-2xl shadow-lg mt-24">
+  <div class="content flex flex-col lg:flex-row lg:items-center lg:justify-between">
+    <div class="right-side lg:w-3/4 lg:ml-20 w-full">
+      <div class="topic-text text-2xl font-semibold text-teal-600">Send us a message</div>
+      <p class="mt-2">
+        If you have any work from me or any types of queries related to my tutorial, you can send me a message from here. It's my pleasure to help you.
+      </p>
+      <form action="#">
+        <div class="input-box h-14 my-3">
+          <input type="text" placeholder="Enter your name" class="w-full h-full bg-[#f0f1f8] rounded-lg px-4 text-base focus:outline-none" required />
+        </div>
+        <div class="input-box h-14 my-3">
+          <input type="email" placeholder="Enter your email" class="w-full h-full bg-[#f0f1f8] rounded-lg px-4 text-base focus:outline-none" required />
+        </div>
+        <div class="input-box message-box my-3">
+          <textarea placeholder="Enter your message" class="w-full bg-[#f0f1f8] rounded-lg px-4 py-2 h-28 text-base resize-none focus:outline-none"></textarea>
+        </div>
+        <div class="button mt-3 space-x-4">
+          <input type="button" value="Back" (click)="goBack()" class="bg-teal-600 text-white text-lg px-4 py-2 rounded-lg cursor-pointer transition ease-in-out duration-300 hover:bg-teal-900" />
+          <input type="submit" value="Send Now" class="bg-teal-600 text-white text-lg px-4 py-2 rounded-lg cursor-pointer transition ease-in-out duration-300 hover:bg-teal-900" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Tailwind breakpoints -->

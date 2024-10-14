@@ -12,6 +12,7 @@ import { AboutModule } from './About/about.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { ContactModule } from './contact/contact.module';
+import { ContactMeComponent } from './navigation/contact-me/contact-me.component';
 
 
 
@@ -19,6 +20,7 @@ import { ContactModule } from './contact/contact.module';
   declarations: [
     AppComponent,
     NavigationComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
