@@ -1,22 +1,35 @@
-<div class="container font-imul mx-auto max-w-5xl p-10 bg-slate-300 text-slate-500 rounded-2xl shadow-lg mt-24">
+<div class="container font-imul mx-auto max-w-5xl p-10 bg-slate-300 text-slate-500 rounded-2xl shadow-lg mt-16">
   <div class="content flex flex-col lg:flex-row lg:items-center lg:justify-between">
     <div class="right-side lg:w-3/4 lg:ml-20 w-full">
       <div class="topic-text text-3xl font-semibold text-teal-600 dark:text-teal-700">Contact Me</div>
       <p class="mt-2">
-        Do you have any questions or would like to collaborate? Feel free to contact me via the form below. I will respond to your message promptly.      </p>
-      <form action="#">
-        <div class="input-box h-14 my-3">
-          <input type="text" placeholder="Enter your name" class="w-full h-full bg-[#f0f1f8] rounded-lg px-4 text-base focus:outline-none" required/>
+        Do you have any questions or would like to collaborate? Feel free to contact me via the form below. I will respond to your message promptly.
+      </p>
+      <form #contactForm="ngForm" (ngSubmit)="submitAccept(contactForm)">
+        <div class="input-box h-14 my-5">
+          <input type="text" placeholder="Enter your name" class="w-full h-full bg-[#f0f1f8] rounded-lg px-4 text-base focus:outline-none"
+          name="name" ngModel required #name="ngModel"/>
+          <div *ngIf="name.invalid && name.touched" class="text-red-600 text-sm mb-1">Name is required</div>
         </div>
-        <div class="input-box h-14 my-3">
-          <input type="email" placeholder="Enter your email" class="w-full h-full bg-[#f0f1f8] rounded-lg px-4 text-base focus:outline-none" required/>
+        <div class="input-box h-14 my-5">
+          <input type="email" placeholder="Enter your email" class="w-full h-full bg-[#f0f1f8] rounded-lg px-4 text-base focus:outline-none" 
+          name="email" ngModel required email #email="ngModel"/>
+          <div *ngIf="email.invalid && email.touched" class="text-red-600 text-sm mb-1">
+            <span *ngIf="email.errors?.['required']">Email is required</span>
+            <span *ngIf="email.errors?.['email']">Please enter a valid email</span>
+          </div>
         </div>
-        <div class="input-box message-box my-3">
-          <textarea placeholder="Enter your message" class="w-full bg-[#f0f1f8] rounded-lg px-4 py-2 h-28 text-base resize-none focus:outline-none"></textarea>
+        <div class="input-box message-box my-5">
+          <textarea placeholder="Enter your message" class="w-full bg-[#f0f1f8] rounded-lg px-4 py-2 h-28 text-base resize-none focus:outline-none"
+          name="message" ngModel required #message="ngModel"></textarea>
+          <div *ngIf="message.invalid && message.touched" class="text-red-600 text-sm">Message is required</div>
         </div>
+
+        <div *ngIf="contactForm.invalid && submitted" class="text-red-600 text-sm mt-1">Please fill in all required fields correctly before submitting.</div>
+
         <div class="button mt-3 space-x-4">
           <input type="button" value="Back" (click)="goBack()" class="bg-teal-600 text-white text-lg px-4 py-2 rounded-lg cursor-pointer transition ease-in-out duration-300 hover:bg-teal-900" />
-          <input type="submit" value="Send Now" (click)="submitAccept($event)" class="bg-teal-600 text-white text-lg px-4 py-2 rounded-lg cursor-pointer transition ease-in-out duration-300 hover:bg-teal-900" />
+          <input type="submit" value="Send Now" class="bg-teal-600 text-white text-lg px-4 py-2 rounded-lg cursor-pointer transition ease-in-out duration-300 hover:bg-teal-900" />
         </div>
       </form>
     </div>

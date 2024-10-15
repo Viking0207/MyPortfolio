@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { ContactMeComponent } from './navigation/contact-me/contact-me.component
     AppRoutingModule,
     MatTabsModule,
     BrowserAnimationsModule,
+    FormsModule,
     FirstPageModule,
     AboutModule,
     ContactModule
