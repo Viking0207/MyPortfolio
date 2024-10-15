@@ -14,4 +14,13 @@ export class ContactMeComponent {
     this.router.navigate(['/home'])
   }
 
+  submitAccept(event: Event) {
+    event.preventDefault();
+    if (confirm("Apakah kamu yakin?")) {
+      //Ok
+      alert("Baiklah, terimakasih!!")
+      this.router.navigate(['/home'])
+    }
+  }
+
 }
