@@ -14,6 +14,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 
 import { ContactModule } from './contact/contact.module';
 import { ContactMeComponent } from './navigation/contact-me/contact-me.component';
+import { BlogModule } from './Blog/blog.module';
 
 
 
@@ -31,7 +32,8 @@ import { ContactMeComponent } from './navigation/contact-me/contact-me.component
     FormsModule,
     FirstPageModule,
     AboutModule,
-    ContactModule
+    ContactModule,
+    BlogModule
   ],
   providers: [
     provideClientHydration(),

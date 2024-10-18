@@ -14,7 +14,10 @@ import { WhatsappComponent } from './contact/whatsapp/whatsapp.component';
 import { InstagramComponent } from './contact/instagram/instagram.component';
 import { ConEmailComponent } from './contact/con-email/con-email.component';
 import { TweetComponent } from './contact/tweet/tweet.component';
+
 import { ContactMeComponent } from './navigation/contact-me/contact-me.component';
+
+import { BlogComponent } from './Blog/blog.component';
 
 
 
@@ -36,7 +39,9 @@ const routes: Routes = [
     {path: 'instagram', component: InstagramComponent, data: { animation: 'Insta' }},
     {path: 'tweet', component: TweetComponent, data: { animation: 'Tweet' }},
     {path: 'email', component: ConEmailComponent, data: { animation: 'Email' }}
-  ]}
+  ]},
+
+  {path:'blog', component: BlogComponent}
 ];
 
 @NgModule({
