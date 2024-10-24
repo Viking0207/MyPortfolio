@@ -24,20 +24,20 @@
     </div>
 
     <div class="lg:ml-14 lg:text-left text-center">
-      <p class="text-xl lg:text-2xl font-bold">Hi there!</p>
+      <p class="text-xl lg:text-2xl font-bold animate__animated animate__fadeInDown animate__delay-1s" style="--animate-delay: 0.1s;">Hi there!</p>
 
-      <h1 class="hidden md:hidden lg:block lg:text-6xl lg:font-bold">
+      <h1 class="hidden md:hidden lg:block lg:text-6xl lg:font-bold animate__animated animate__fadeInDown animate__delay-1s" style="--animate-delay: 0.5s;">
         I am <span class="lg:text-teal-700">Ficky</span><br />Febryan
       </h1>
 
-      <h1 class="lg:hidden text-5xl font-bold px-5">
+      <h1 class="lg:hidden text-5xl font-bold px-5 animate__animated animate__fadeInDown animate__delay-1s" style="--animate-delay: 0.5;">
         I am <span class="text-teal-700 lg:hidden">Ficky Febryan</span> 
       </h1>
       
-      <p class="text-3xl lg:text-4xl mt-1 md:mt-2 py-1 tracking-wider">
+      <p class="text-3xl lg:text-4xl mt-1 md:mt-2 py-1 tracking-wider animate__animated animate__fadeInDown animate__delay-1s">
         I am a <span class="text-teal-700">web developer</span>
       </p>
-      <p class="lg:text-left lg:w-2/2 lg:mb-3 mb-5 text-center text-lg px-4 md:px-8 lg:px-px">
+      <p class="lg:text-left lg:w-2/2 lg:mb-3 mb-5 text-center text-lg px-4 md:px-8 lg:px-px animate__animated animate__fadeInDown animate__delay-1s" style="--animate-delay: 1.5s;">
         Saya seorang web developer yang berfokus pada framework Angular dan juga
         seorang fullstak developer. Saya berpengalaman dalam bidang frontend dan
         backend, serta pada pengembangan aplikasi web yang responsif dan
@@ -45,9 +45,12 @@
         teknologi yang paling terbaru.
       </p>
       <button
-        class="btn rounded bg-teal-700 hover:bg-teal-900 text-slate-100 text-sm w-36 h-12 mb-20"
+      type="button"
+      #hireBtn
+      class="btn rounded bg-teal-700 hover:bg-teal-900 text-slate-100 text-sm w-36 h-12 mb-20 animate__animated animate__fadeInDown animate__delay-2s"
+      (click)="showAlert()"
       >
-        Hire Me
+        Hire M
       </button>
     </div>
   </div>
