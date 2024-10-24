@@ -5,17 +5,16 @@ import { RouterModule } from '@angular/router';
 import { BlogComponent } from './blog.component';
 
 
-
 @NgModule({
   declarations: [
-    BlogComponent
+    BlogComponent,
   ],
   imports: [
     CommonModule,
     RouterModule
   ],
   exports: [
-    BlogComponent
+    BlogComponent,
   ]
 })
 export class BlogModule { }

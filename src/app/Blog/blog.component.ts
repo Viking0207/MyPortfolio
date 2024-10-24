@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import * as AOS from 'aos'; // Pastikan AOS diinstal
+import * as AOS from 'aos';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-blog',
@@ -18,12 +19,6 @@ export class BlogComponent implements OnInit {
     });
     console.log('AOS.init() has been called');
 
-    // Refresh AOS ketika gambar dimuat
-    // const images = document.querySelectorAll('img');
-    // images.forEach((img) => {
-    //   img.addEventListener('load', () => AOS.refresh());
-    // });
-
     window.addEventListener('load', () => {
       console.log('window loaded, refreshing AOS');
       AOS.refresh();
@@ -37,6 +32,9 @@ export class BlogComponent implements OnInit {
       });
     });
 
+    $(".filter-item").click(function () {
+      $(this).addClass("active-filter").siblings().removeClass("active-filter");
+    });
   }
 
   // Listener untuk scroll
