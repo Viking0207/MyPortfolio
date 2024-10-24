@@ -10,10 +10,6 @@ import { VisionMisionComponent } from './About/about-content/vision-mision/visio
 import { QuotesComponent } from './About/about-content/quotes/quotes.component';
 
 import { ContactComponent } from './contact/contact.component';
-import { WhatsappComponent } from './contact/whatsapp/whatsapp.component';
-import { InstagramComponent } from './contact/instagram/instagram.component';
-import { ConEmailComponent } from './contact/con-email/con-email.component';
-import { TweetComponent } from './contact/tweet/tweet.component';
 
 import { ContactMeComponent } from './navigation/contact-me/contact-me.component';
 
@@ -34,12 +30,7 @@ const routes: Routes = [
     {path: 'quotes', component: QuotesComponent, data: { animation: 'QuotesPG' }},
   ]},
 
-  {path:'contact', component: ContactComponent, children: [
-    {path: 'whatsapp', component: WhatsappComponent, data: { animation: 'Whats' }},
-    {path: 'instagram', component: InstagramComponent, data: { animation: 'Insta' }},
-    {path: 'tweet', component: TweetComponent, data: { animation: 'Tweet' }},
-    {path: 'email', component: ConEmailComponent, data: { animation: 'Email' }}
-  ]},
+  {path:'contact', component: ContactComponent },
 
   {path:'blog', component: BlogComponent}
 ];

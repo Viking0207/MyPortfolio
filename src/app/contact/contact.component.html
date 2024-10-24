@@ -1,39 +1,196 @@
-<div class="flex justify-between items-center h-screen">
-  <!-- <div class="content-container ml-8 p-9 border border-gray-300 rounded-lg" [@contentAnimation]>
-    <div *ngIf="selectedIndex === 0">
-      <h2>Contact WhatsApp</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div *ngIf="selectedIndex === 1">
-      <h2>Contact Instagram</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div *ngIf="selectedIndex === 2">
-      <h2>Contact Tweet</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div *ngIf="selectedIndex === 3">
-      <h2>Contact Email</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-  </div> -->
-
-  <div [@routeAnimations]="prepareRoute('outlet')">
-    <router-outlet #outlet="outlet"></router-outlet>
-  </div>
-
+<!-- Whatsapp Part -->
+<div class="flex font-imul items-center justify-center min-h-screen">
   <div
-    class="tab-container relative w-96 h-80 flex flex-col justify-center overflow-hidden perspective-[62.5rem] mr-4"
+    class="relative card bg-gray-800 dark:bg-slate-300 border-8 border-green-500 w-[30rem] shadow-3xl rounded-[2rem]"
   >
     <div
-      *ngFor="let tab of tabs; let i = index"
-      class="tab text-center bg-gray-300 my-3 cursor-pointer transition-all duration-[800ms] ease-out flex items-center justify-center transform-gpu"
-      [ngClass]="getClasses(i)"
-      (click)="updateTabs(i) === onTabChange(i)"
+      class="absolute -top-14 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-green-500 rounded-full flex items-center justify-center border-4 border-green-500 shadow-lg"
     >
-      {{ tab }}
+      <img src="/assets/svg/whatsapp.svg" width="60" height="60">
+    </div>
+    <figure class="px-10 pt-8"></figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-green-600 font-bold">Whatsapp Contact</h2>
+      <p class="pb-3">Contact me with this number:</p>
+      <div class="card-actions">
+        <div
+          class="mt-4 p-4 border-4 border-green-600 rounded-full w-[23rem] inline-block shadow-lg bg-base-100"
+        >
+          <p class="text-3xl font-semibold text-green-600">+62 812 3456 7890</p>
+        </div>
+      </div>
     </div>
   </div>
-
-  
 </div>
+
+<!-- Instagram Part -->
+<div class="flex font-imul items-center justify-center min-h-screen">
+  <div
+    class="relative card bg-gray-800 dark:bg-slate-300 border-8 border-pink-500 w-[30rem] shadow-3xl rounded-[2rem]"
+    data-aos="fade-up"
+  >
+    <div
+      class="absolute -top-14 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-pink-200 rounded-full flex items-center justify-center border-4 border-purple-500 shadow-lg"
+    >
+      <img src="/assets/svg/instagram.svg" width="60" height="60">
+    </div>
+    <figure class="px-10 pt-8"></figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-purple-500 font-bold">Instagram Username</h2>
+      <p class="pb-3">Contact to my instagram:</p>
+      <div class="card-actions">
+        <div
+          class="mt-4 p-4 border-4 border-purple-500 rounded-full w-[23rem] inline-block shadow-lg bg-base-100"
+        >
+          <p class="text-3xl font-semibold text-pink-400">&#64;larekacang</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tweet X Part -->
+<div class="flex font-imul items-center justify-center min-h-screen">
+  <div
+    class="relative card bg-gray-800 dark:bg-slate-300 border-8 border-gray-950 w-[30rem] shadow-3xl rounded-[2rem]"
+    data-aos="flip-down"
+  >
+    <div
+      class="absolute -top-14 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-black rounded-full flex items-center justify-center border-4 border-gray-950 shadow-lg"
+    >
+      <img src="/assets/svg/twitter.svg" alt="">
+    </div>
+    <figure class="px-10 pt-8"></figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-white dark:text-gray-950 font-bold">Tweet X Username</h2>
+      <p class="pb-3">Contact to my tweet:</p>
+      <div class="card-actions">
+        <div
+          class="mt-4 p-4 border-4 border-gray-950 rounded-full w-[23rem] inline-block shadow-lg bg-base-100"
+        >
+          <p class="text-3xl font-semibold text-white dark:text-gray-950">
+            &#64;ContohPengguna
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Email Part -->
+<div class="flex font-imul items-center justify-center min-h-screen">
+  <div
+    class="relative card bg-gray-800 dark:bg-slate-300 border-8 border-red-500 w-[30rem] shadow-3xl rounded-[2rem]"
+    data-aos="zoom-in-up"
+  >
+    <div
+      class="absolute -top-14 left-1/2 transform -translate-x-1/2 w-24 h-24 bg-slate-200 rounded-full flex items-center justify-center border-4 border-red-500 shadow-lg"
+    >
+    <img src="/assets/svg/gmail.svg" width="60" height="60">
+  
+    </div>
+    <figure class="px-10 pt-8"></figure>
+    <div class="card-body items-center text-center">
+      <h2 class="card-title text-red-500 font-bold">Gmail Contact</h2>
+      <p class="pb-3">Contact me to my gmail address:</p>
+      <div class="card-actions">
+        <div
+          class="mt-4 p-4 border-4 border-red-500 rounded-full w-[24rem] inline-block shadow-lg bg-base-100"
+        >
+          <p class="text-3xl font-semibold text-red-500">namaanda&#64;gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Footer Part -->
+<footer
+  class="footer footer-center bg-teal-900 dark:bg-teal-700 text-base-content rounded p-10"
+>
+  <nav class="grid grid-flow-col gap-4">
+    <a [routerLink]="['/home']" class="link link-hover">Home</a>
+    <a [routerLink]="['/contact']" class="link link-hover">Contact</a>
+  </nav>
+  <nav>
+    <div class="grid grid-flow-col gap-4">
+      <!-- Github -->
+      <a
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="24"
+          height="24"
+          viewBox="0 0 16 16"
+          class="fill-current"
+        >
+          <path
+            d="M8,0C3.6,0,0,3.6,0,8c0,3.526,2.315,6.534,5.498,7.591c0.377,0.055,0.52-0.179,0.52-0.385c0-0.19-0.007-0.693-0.011-1.361	c-2.225,0.483-2.695-1.072-2.695-1.072c-0.364-0.924-0.888-1.17-0.888-1.17c-0.726-0.496,0.055-0.486,0.055-0.486	c0.803,0.057,1.225,0.824,1.225,0.824c0.714,1.223,1.872,0.87,2.328,0.665c0.073-0.517,0.279-0.87,0.508-1.069	c-1.776-0.202-3.644-0.888-3.644-3.954c0-0.873,0.312-1.587,0.823-2.147C3.637,5.233,3.362,4.419,3.798,3.318	c0,0,0.672-0.215,2.2,0.82C6.636,3.961,7.32,3.872,8,3.869c0.679,0.003,1.364,0.092,2.003,0.269c1.527-1.035,2.198-0.82,2.198-0.82	c0.436,1.101,0.162,1.915,0.08,2.117c0.513,0.559,0.822,1.273,0.822,2.147c0,3.073-1.87,3.75-3.653,3.948	c0.287,0.247,0.543,0.735,0.543,1.482c0,1.07-0.01,1.932-0.01,2.195c0,0.208,0.141,0.443,0.521,0.385C13.686,14.532,16,11.526,16,8	C16,3.6,12.4,0,8,0z"
+          ></path>
+        </svg>
+      </a>
+      <!-- Twitter -->
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current"
+        >
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+          ></path>
+        </svg>
+      </a>
+      <!-- Instagram -->
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="25"
+          height="25"
+          viewBox="0 0 50 50"
+          class="fill-current"
+        >
+          <path
+            d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+          ></path>
+        </svg>
+      </a>
+      <!-- Youtube -->
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current"
+        >
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"
+          ></path>
+        </svg>
+      </a>
+      <!-- Facebook -->
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current"
+        >
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+          ></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+  <aside>
+    <p>Copyright © 2024 - All right reserved by SMK Negeri 7 Batam</p>
+  </aside>
+</footer>

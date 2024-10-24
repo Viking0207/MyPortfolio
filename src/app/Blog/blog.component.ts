@@ -15,7 +15,7 @@ export class BlogComponent implements OnInit {
     console.log('ngOnInit is called');
     AOS.init({
       offset: 200,
-      duration: 1500,
+      duration: 1700,
     });
     console.log('AOS.init() has been called');
 
