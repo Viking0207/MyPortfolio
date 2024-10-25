@@ -1,0 +1,18 @@
+{
+  "hosting": {
+    "site": "febry-portofolio",
+    "public": "dist/my-portofolio/browser",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
+
